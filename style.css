@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+.description {
+  margin-top: 2rem;
+  padding-inline: 5rem;
+  line-height: 2rem;
+}
+
+/*  Targetting the paragraph element when selected */
+
+.description::selection {
+  text-shadow: 1px 1px 1px lightblue;
+  background-color: lightblue;
+}
+
+/* Targetting the title element when selected */
+
+.title::selection {
+  background-color: lightgreen;
+}
